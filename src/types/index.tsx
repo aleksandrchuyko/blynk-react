@@ -1,9 +1,11 @@
+export type Comment = {
+  id: string | undefined;
+  color: string;
+  content: string;
+};
+
 export type Note = {
   id: string | undefined;
-  createdAt: string;
-  content: string;
-  category: Categories;
-  active: boolean;
-  dates: string[];
+  title: string;
+  comments: Comment[];
 };
-export type Categories = 'Idea' | 'Task' | 'Random Thought';

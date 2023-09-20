@@ -1,3 +1,4 @@
+import Sidebar from '../Sidebar/Sidebar';
 import css from './Layout.module.css';
 type Props = {
   children: React.ReactNode;
@@ -5,7 +6,7 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => (
   <main className={css.container}>
-    <h1>Hello Notes</h1>
+    <Sidebar />
     {children}
   </main>
 );
