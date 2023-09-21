@@ -5,7 +5,7 @@ export type Comment = {
 };
 
 export type Note = {
-  id: string | undefined;
+  id: string;
   title: string;
   comments: Comment[];
 };
