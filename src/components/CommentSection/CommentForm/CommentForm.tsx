@@ -1,3 +1,4 @@
+import css from './CommentForm.module.css'
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateNote } from '../../../redux/notesSlice';
@@ -51,8 +52,8 @@ const CommentForm: React.FC<Props> = ({ note }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    
+      <form className={css.inputGroup} onSubmit={handleSubmit}>
         <input
           type='color'
           name='color'
@@ -71,7 +72,7 @@ const CommentForm: React.FC<Props> = ({ note }) => {
 
         <button type='submit'>Add New</button>
       </form>
-    </div>
+    
   );
 };
 

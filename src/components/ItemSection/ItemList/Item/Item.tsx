@@ -1,3 +1,4 @@
+import css from './Item.module.css'
 import { useDispatch } from 'react-redux';
 import { deleteNote, setCurrent } from '../../../../redux/notesSlice';
 import { useSelector } from 'react-redux';
@@ -19,7 +20,7 @@ const Item: React.FC<Props> = ({ note }) => {
   let current = useSelector(getCurrent);
 
   return (
-    <div
+    <li className={css.item}
       onClick={() => {
         dispatch(setCurrent(note.id));
       }}
@@ -35,7 +36,7 @@ const Item: React.FC<Props> = ({ note }) => {
       >
         Delete
       </button>
-    </div>
+    </li>
   );
 };
 

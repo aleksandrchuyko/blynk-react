@@ -1,3 +1,4 @@
+import css from './ItemForm.module.css';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addNote } from '../../../redux/notesSlice';
@@ -27,21 +28,18 @@ const ItemForm: React.FC = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <input
-            type='text'
-            name='title'
-            value={title}
-            onChange={handleChange}
-            placeholder='Type name here...'
-            required
-          />
-        </div>
-        <button type='submit'>Add New</button>
-      </form>
-    </div>
+    <form className={css.inputGroup} onSubmit={handleSubmit}>
+      <input
+        type='text'
+        name='title'
+        value={title}
+        onChange={handleChange}
+        placeholder='Type name here...'
+        required
+      />
+
+      <button type='submit'>Add New</button>
+    </form>
   );
 };
 

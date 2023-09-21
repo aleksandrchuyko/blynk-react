@@ -1,3 +1,4 @@
+import css from './CommentSection.module.css';
 import { useSelector } from 'react-redux';
 import CommentForm from './CommentForm/CommentForm';
 import { getCurrent, getNotes } from '../../redux/selectors';
@@ -9,7 +10,7 @@ const CommentSection: React.FC = () => {
   let note = notes.find((item) => item.id === current);
 
   return (
-    <div>
+    <div className={css.commentsBox}>
       <h1>Comments</h1>
       {note && (
         <>
