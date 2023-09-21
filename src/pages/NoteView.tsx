@@ -1,3 +1,4 @@
+import CommentSection from '../components/CommentSection/CommentSection';
 import ItemSection from '../components/ItemSection/ItemSection';
 
 const NoteView: React.FC = () => {
@@ -5,6 +6,7 @@ const NoteView: React.FC = () => {
     <main>
       <h2>Note view</h2>
       <ItemSection />
+      <CommentSection />
     </main>
   );
 };

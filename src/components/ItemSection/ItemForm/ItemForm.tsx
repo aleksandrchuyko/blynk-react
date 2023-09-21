@@ -23,6 +23,7 @@ const ItemForm: React.FC = () => {
     };
 
     dispatch(addNote(newNote));
+    setTitle('');
   };
 
   return (

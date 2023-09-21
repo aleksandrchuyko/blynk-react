@@ -37,6 +37,7 @@ const notesSlice = createSlice({
         if (note.id === action.payload.id) {
           // note.content = action.payload.content;
           // note.dates = action.payload.dates;
+          note.comments = action.payload.comments;
           break;
         }
       }
