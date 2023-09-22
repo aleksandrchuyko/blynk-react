@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/rad-homework-react/static/css/main.07084fc3.css",
-    "main.js": "/rad-homework-react/static/js/main.bfdbd2a7.js",
-    "index.html": "/rad-homework-react/index.html",
-    "main.07084fc3.css.map": "/rad-homework-react/static/css/main.07084fc3.css.map",
-    "main.bfdbd2a7.js.map": "/rad-homework-react/static/js/main.bfdbd2a7.js.map"
+    "main.css": "/blynk-react/static/css/main.07084fc3.css",
+    "main.js": "/blynk-react/static/js/main.bfdbd2a7.js",
+    "index.html": "/blynk-react/index.html",
+    "main.07084fc3.css.map": "/blynk-react/static/css/main.07084fc3.css.map",
+    "main.bfdbd2a7.js.map": "/blynk-react/static/js/main.bfdbd2a7.js.map"
   },
   "entrypoints": [
     "static/css/main.07084fc3.css",
