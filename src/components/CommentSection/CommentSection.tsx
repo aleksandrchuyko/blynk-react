@@ -6,12 +6,13 @@ import CommentList from './CommentList/CommentList';
 
 const CommentSection: React.FC = () => {
   let current = useSelector(getCurrent);
+
   let notes = useSelector(getNotes);
-  let note = notes.find((item) => item.id === current);
+  let note = current ? notes.find((item) => item.id === current) : notes[0];
 
   return (
     <div className={css.commentsBox}>
-      <h1>Comments</h1>
+      <h1>Comments #{note?.id}</h1>
       {note && (
         <>
           <CommentList comments={note.comments} />

@@ -35,8 +35,6 @@ const notesSlice = createSlice({
     updateNote(state, action: PayloadAction<Note>) {
       for (let note of state.notes) {
         if (note.id === action.payload.id) {
-          // note.content = action.payload.content;
-          // note.dates = action.payload.dates;
           note.comments = action.payload.comments;
           break;
         }

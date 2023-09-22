@@ -11,9 +11,7 @@ const ItemList: React.FC = () => {
   return (
     <ul className={css.listGroup}>
       {notes.map((note) => (
-        // <li className={css.item} key={note.id}>
-          <Item note={note} key={note.id}></Item>
-        // </li>
+        <Item note={note} key={note.id}></Item>
       ))}
     </ul>
   );
