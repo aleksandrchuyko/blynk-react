@@ -5,10 +5,10 @@ type Props = {
 };
 
 const Layout: React.FC<Props> = ({ children }) => (
-  <main className={css.container}>
+  <div className={css.container}>
     <Sidebar />
     {children}
-  </main>
+  </div>
 );
 
 export default Layout;

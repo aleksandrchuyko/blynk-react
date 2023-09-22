@@ -7,8 +7,12 @@ const NoteView: React.FC = () => {
     <div className={css.view}>
       <main className={css.main}>
         <div className={css.contentBox}>
-          <ItemSection />
-          <CommentSection />
+          <div className={css.sectionBox}>
+            <ItemSection />
+          </div>
+          <div className={css.sectionBox}>
+            <CommentSection />
+          </div>
         </div>
       </main>
     </div>
