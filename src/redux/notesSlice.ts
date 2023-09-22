@@ -10,7 +10,7 @@ const notesInitialState: Note[] = [
     comments: [
       {
         id: '00000xx',
-        color: '#ffffff',
+        color: '#000000',
         content: 'Test',
       },
     ],
