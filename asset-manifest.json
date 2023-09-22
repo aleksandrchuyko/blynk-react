@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/blynk-react/static/css/main.7972c85a.css",
-    "main.js": "/blynk-react/static/js/main.3f942587.js",
+    "main.css": "/blynk-react/static/css/main.bb20087c.css",
+    "main.js": "/blynk-react/static/js/main.64aafa17.js",
     "index.html": "/blynk-react/index.html",
-    "main.7972c85a.css.map": "/blynk-react/static/css/main.7972c85a.css.map",
-    "main.3f942587.js.map": "/blynk-react/static/js/main.3f942587.js.map"
+    "main.bb20087c.css.map": "/blynk-react/static/css/main.bb20087c.css.map",
+    "main.64aafa17.js.map": "/blynk-react/static/js/main.64aafa17.js.map"
   },
   "entrypoints": [
-    "static/css/main.7972c85a.css",
-    "static/js/main.3f942587.js"
+    "static/css/main.bb20087c.css",
+    "static/js/main.64aafa17.js"
   ]
 }
