@@ -6,7 +6,6 @@ import Item from './Item/Item';
 
 const ItemList: React.FC = () => {
   let notes = useSelector(getNotes);
-  console.log(notes);
 
   return (
     <ul className={css.listGroup}>

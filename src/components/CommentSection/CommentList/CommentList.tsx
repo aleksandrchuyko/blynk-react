@@ -1,3 +1,5 @@
+import css from './CommentList.module.css';
+
 import { nanoid } from '@reduxjs/toolkit';
 import { Comment } from '../../../types';
 
@@ -7,15 +9,19 @@ type Props = {
 
 const CommentList: React.FC<Props> = ({ comments }) => {
   return (
-    <div>
-      <ul>
-        {comments.map((comment) => (
-          <li key={nanoid()}>
-            <div>{comment.content}</div>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      {comments.map((comment) => (
+        <div className={css.commentCard} key={nanoid()}>
+          <div
+            className={css.cardColor}
+            style={{ backgroundColor: comment.color }}
+          ></div>
+          <div className={css.cardContent}>
+            <pre>{comment.content}</pre>
+          </div>
+        </div>
+      ))}
+    </>
   );
 };
 

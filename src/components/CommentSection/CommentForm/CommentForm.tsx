@@ -1,4 +1,4 @@
-import css from './CommentForm.module.css'
+import css from './CommentForm.module.css';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateNote } from '../../../redux/notesSlice';
@@ -52,27 +52,29 @@ const CommentForm: React.FC<Props> = ({ note }) => {
   };
 
   return (
-    
-      <form className={css.inputGroup} onSubmit={handleSubmit}>
-        <input
-          type='color'
-          name='color'
-          value={color}
-          onChange={handleChange}
-          placeholder='Type name here...'
-        />
-        <textarea
-          name='content'
-          rows={1}
-          value={content}
-          onChange={handleChange}
-          placeholder='Type name here...'
-          required
-        />
+    <form className={css.inputGroup} onSubmit={handleSubmit}>
+      <input
+        className={`${css.control} ${css.controlColor}`}
+        type='color'
+        name='color'
+        value={color}
+        onChange={handleChange}
+        placeholder='Type name here...'
+      />
+      <textarea
+        className={`${css.control} ${css.controlText}`}
+        name='content'
+        rows={1}
+        value={content}
+        onChange={handleChange}
+        placeholder='Type name here...'
+        required
+      />
 
-        <button type='submit'>Add New</button>
-      </form>
-    
+      <button className={css.controlBtn} type='submit'>
+        Add New
+      </button>
+    </form>
   );
 };
 
