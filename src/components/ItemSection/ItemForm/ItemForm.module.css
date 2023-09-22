@@ -18,7 +18,7 @@
   }
 
   & button {
-		cursor: pointer;
+    cursor: pointer;
     color: #fff;
     background-color: #17a2b8;
     border-color: #17a2b8;
@@ -35,5 +35,10 @@
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  & button:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
   }
 }

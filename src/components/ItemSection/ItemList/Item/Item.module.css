@@ -1,7 +1,7 @@
 .item {
   display: flex;
   justify-content: space-between !important;
-	align-items: center!important;
+  align-items: center !important;
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
@@ -37,6 +37,12 @@
     border-color: #dc3545;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  & button:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
   }
 
   & span {
