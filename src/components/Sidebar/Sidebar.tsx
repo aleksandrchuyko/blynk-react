@@ -1,9 +1,13 @@
+import css from './Sidebar.module.css';
+
 const Sidebar: React.FC = () => {
   return (
-    <aside style={{ width: '10vw' , backgroundColor: 'GrayText'}}>
-      <h2>DAYRY APP</h2>
-      <div>Comment whit no sense</div>
-    </aside>
+    <div className={css.sidebar}>
+      <aside>
+        <h2>DAYRY APP</h2>
+        <div>Comment whit no sense</div>
+      </aside>
+    </div>
   );
 };
 

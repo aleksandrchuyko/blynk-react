@@ -1,8 +1,17 @@
+import css from './NoteView.module.css';
+import CommentSection from '../components/CommentSection/CommentSection';
+import ItemSection from '../components/ItemSection/ItemSection';
+
 const NoteView: React.FC = () => {
   return (
-    <main>
-      <h2>Note view</h2>
-    </main>
+    <div className={css.view}>
+      <main className={css.main}>
+        <div className={css.contentBox}>
+          <ItemSection />
+          <CommentSection />
+        </div>
+      </main>
+    </div>
   );
 };
 
